@@ -1,0 +1,19 @@
+CREATE DATABASE cine;
+
+USE cine;
+
+CREATE TABLE users (
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255),
+surname varchar(255),
+dateBirth varchar(255),
+gender varchar(255),
+phone int(25),
+email varchar(255) UNIQUE KEY,
+password varchar(255),
+image varchar(255),
+PRIMARY KEY(id));
+
+insert into users values(null, "Daniel", "Acosta", "1992-06-27", "Masculino", "1173609907", "danyel2706@gmail.com", "12345678", "null");
+insert into users values(null, "Andrea", "Alfonzo", "1991-01-21", "Femenino", "1122553108", "andrealfonzoc@gmail.com", "12345678", "");
+insert into users values(null, "Samuel", "Lopez", "1999-10-14", "Masculino", "1189767898", "samuelL@gmail.com", "12345678", "null");

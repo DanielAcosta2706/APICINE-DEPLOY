@@ -1,0 +1,27 @@
+CREATE DATABASE cine;
+
+USE cine;
+
+CREATE TABLE movies (
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255),
+cinema varchar(255),
+description varchar(255),
+day varchar(255),
+function1 varchar(255),
+function2 varchar(255),
+function3 varchar(255),
+image varchar(255),
+PRIMARY KEY(id));
+
+insert into movies values(null, "Shrek", "Puerto Madero", "Es un ogro verde y solitario que tiene su hogar en un pantano, un dia conoce a un burro que habla
+que huyo de su curel dueña y no le teme pese a sus intentos por asustarlo e insiste en hacerle compañia", " ", " ", " ", " ", "null");
+insert into movies values(null, "El conjuro", "Palermo", "Basada en hechos reales, narra la historia de los encuentros sobrenaturales que vivio la familia Perron
+en su casa de Rhode Island a principios de los años 70", " ", " ", " ", " ", "null");
+insert into movies values(null, "Mision imposible", "Microcentro", "Ethan Hunt es un espia capaz de llevar a cabo las misiones mas peligrosas con la maxima eficacia.
+Ahora debe participar en una dificilisima mision; evitar la venta de un disco robado que contiene informacion secreta", " ", " ", " ", " ", "null");
+
+
+
+
+

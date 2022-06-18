@@ -1,0 +1,16 @@
+CREATE DATABASE cine;
+
+USE cine;
+
+CREATE TABLE tickets (
+id int(11) AUTO_INCREMENT PRIMARY KEY,
+userid int(11),
+movie varchar(255),
+cinema varchar(255),
+day varchar(255),
+function1 varchar(255),
+function2 varchar(255),
+function3 varchar(255),
+seat varchar(255),
+payment varchar(255),
+FOREIGN KEY (userid) REFERENCES users(id));
