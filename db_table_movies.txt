@@ -1,6 +1,6 @@
-CREATE DATABASE cine;
+CREATE DATABASE heroku_c997b910b05bbaa;
 
-USE cine;
+USE heroku_c997b910b05bbaa;
 
 CREATE TABLE movies (
 id int NOT NULL AUTO_INCREMENT,
