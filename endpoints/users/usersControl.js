@@ -44,7 +44,7 @@ const listOne = async function (req, res, next) {
 // Register new user
 const register = async (req, res, next) => {
   const cleanBody = matchedData(req);
-  const image = `${url}userImage/${req.file.filename}`;
+  const image = url + req.file.filename;
   const password = await hashPassword(req.body.password);
   const dbResponse = await registerUser({ ...cleanBody, password, image });
   if (dbResponse instanceof Error) return next(dbResponse);
