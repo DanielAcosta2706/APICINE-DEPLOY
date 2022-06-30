@@ -20,7 +20,6 @@ const validatorCreateMovie = [
   check("description")
     .exists()
     .withMessage("Description is required")
-    .isAlphanumeric("es-ES", { ignore: " " })
     .notEmpty()
     .withMessage("Description must not be empty"),
   check("day")
