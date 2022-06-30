@@ -1,6 +1,6 @@
-CREATE DATABASE heroku_c997b910b05bbaa;
+CREATE DATABASE heroku_abe36634490e587;
 
-USE heroku_c997b910b05bbaa;
+USE heroku_abe36634490e587;
 
 CREATE TABLE cinema (
 id int NOT NULL AUTO_INCREMENT,

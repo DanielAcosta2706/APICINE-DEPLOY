@@ -1,6 +1,6 @@
-CREATE DATABASE heroku_c997b910b05bbaa;
+CREATE DATABASE heroku_abe36634490e587;
 
-USE heroku_c997b910b05bbaa;
+USE heroku_abe36634490e587;
 
 CREATE TABLE tickets (
 id int(11) AUTO_INCREMENT PRIMARY KEY,
