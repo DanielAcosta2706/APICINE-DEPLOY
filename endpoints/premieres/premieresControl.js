@@ -30,7 +30,7 @@ const listOne = async function (req, res, next) {
 
 // Register new premiere
 const register = async (req, res, next) => {
-  const image = `${url}premiereImage/${req.file.filename}`;
+  const image = url + req.file.filename;
   const dbResponse = await registerPremiere({ ...req.body, image });
   if (dbResponse instanceof Error) return next(dbResponse);
   res.status(201).json(`Premiere ${req.body.name} created!`);

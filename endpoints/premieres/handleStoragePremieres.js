@@ -4,7 +4,7 @@ const multer = require("multer");
 // Definie el middleware donde se guardaran los archivos
 const storage = multer.diskStorage({
   destination: (req, file, callback) => {
-    const pathStorage = `${__dirname}/../../public/premiereImage`;
+    const pathStorage = `${__dirname}/../../public`;
     callback(null, pathStorage);
   },
   filename: (req, file, callback) => {

@@ -35,7 +35,7 @@ const listOne = async function (req, res, next) {
 
 // Register new cinema
 const register = async (req, res, next) => {
-  const image = `${url}cinemaImage/${req.file.filename}`;
+  const image = url + req.file.filename;
   const dbResponse = await registerCinema({ ...req.body, image });
   if (dbResponse instanceof Error) return next(dbResponse);
   res.status(201).json(`Cinema ${req.body.cinemaName} created!`);
