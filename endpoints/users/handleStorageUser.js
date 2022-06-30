@@ -4,7 +4,7 @@ const multer = require("multer");
 // Define el middleware donde se guardan los archivos de los usuarios
 const storage = multer.diskStorage({
   destination: (req, file, callback) => {
-    const pathStorage = `${__dirname}/../../public/userImage`;
+    const pathStorage = `${__dirname}/../../public`;
     callback(null, pathStorage);
   },
   filename: (req, file, callback) => {
